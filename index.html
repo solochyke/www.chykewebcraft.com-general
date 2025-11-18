@@ -154,28 +154,30 @@
     </script>
 
 <style>
-  /* Pulse animation */
+  /* Pulse animation - Recommended Smoother Version */
   @keyframes pulseRing {
     0% {
       transform: scale(1);
       opacity: 0.6;
     }
     70% {
-      transform: scale(1.8);
-      opacity: 0;
+      transform: scale(1.65); /* Softer scale jump */
+      opacity: 0.15;        /* Keep it visible a bit longer */
     }
     100% {
+      transform: scale(1.65); 
       opacity: 0;
     }
   }
 
+  /* Main Button Styling */
   .whatsapp-btn {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 20px; /* Vertical position */
+    left: 20px; /* Set to the LEFT side */
     width: 60px;
     height: 60px;
-    background: #25D366;
+    background: #25D366; /* WhatsApp Green */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -214,5 +216,6 @@
     <path d="M12.04 2a9.87 9.87 0 0 0-8.5 15l-1.02 3.7 3.8-.99a9.87 9.87 0 0 0 14.46-8.76A9.86 9.86 0 0 0 12.04 2Zm5.55 14.3a7.88 7.88 0 0 1-11.16 1.04l-.32-.26-2.24.59.6-2.18-.26-.34a7.89 7.89 0 1 1 13.38 7.15Zm-1.16-3.1c-.16-.08-1.42-.7-1.64-.78-.22-.09-.37-.12-.53.12s-.62.78-.76.94-.28.18-.52.06a6.66 6.66 0 0 1-3.91-3.43c-.3-.52.3-.48.84-1.6.1-.21.05-.39 0-.53s-.54-1.3-.74-1.78-.4-.42-.54-.43h-.46a.89.89 0 0 0-.64.3 2.71 2.71 0 0 0-.84 2c0 1 .7 2 1 2.47.12.17 2 3.22 4.82 4.5a6.51 6.51 0 0 0 3.87.88 3.34 3.34 0 0 0 2.2-1.56 2.76 2.76 0 0 0 .2-1.56c-.09-.18-.22-.24-.46-.35Z"/>
   </svg>
 </a>
+
 </body>
                 </html>
