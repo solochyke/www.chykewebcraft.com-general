@@ -153,6 +153,64 @@
       })(document);
     </script>
 
+<style>
+  /* Pulse animation */
+  @keyframes pulseRing {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    70% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    z-index: 9999;
+    transition: transform 0.25s ease;
+  }
+
+  .whatsapp-btn:hover {
+    transform: scale(1.12);
+  }
+
+  /* Pulsing ring behind the icon */
+  .whatsapp-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #25D366;
+    animation: pulseRing 1.8s infinite ease-out;
+    z-index: -1;
+  }
+</style>
+
+<a href="https://wa.me/2347016316936" target="_blank" class="whatsapp-btn">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="#fff"
+  >
+    <path d="M12.04 2a9.87 9.87 0 0 0-8.5 15l-1.02 3.7 3.8-.99a9.87 9.87 0 0 0 14.46-8.76A9.86 9.86 0 0 0 12.04 2Zm5.55 14.3a7.88 7.88 0 0 1-11.16 1.04l-.32-.26-2.24.59.6-2.18-.26-.34a7.89 7.89 0 1 1 13.38 7.15Zm-1.16-3.1c-.16-.08-1.42-.7-1.64-.78-.22-.09-.37-.12-.
 </body>
                 </html>
