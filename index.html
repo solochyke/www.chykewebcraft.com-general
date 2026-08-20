@@ -20,13 +20,13 @@
           extend: {
             colors: {
               navy: {
-                DEFAULT: '#0F172A',
-                light: '#1E293B',
-                dark: '#020617'
+                DEFAULT: '#1F2937',
+                light: '#374151',
+                dark: '#111827'
               },
               gold: {
-                DEFAULT: '#F59E0B',
-                hover: '#D97706',
+                DEFAULT: '#FBBF24',
+                hover: '#F59E0B',
                 light: '#FEF3C7'
               }
             }
@@ -75,39 +75,39 @@
 <body class="bg-white text-navy font-sans antialiased selection:bg-gold selection:text-navy">
 
     <!-- Header Navigation -->
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <header class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-3">
           <button id="openLogoModal" class="focus:outline-none focus:ring-2 focus:ring-gold rounded p-0.5 transition-transform hover:scale-105" aria-label="View Logo Full Size">
             <img src="img/CWCC logo 2026.jfif" alt="CWCC Logo" class="h-10 w-auto rounded object-cover cursor-pointer" />
           </button>
-          <span class="text-lg md:text-xl font-bold tracking-tight text-navy">CWCC <span class="hidden sm:inline font-normal text-gray-400">|</span> <span class="hidden sm:inline text-sm md:text-base font-semibold text-gray-700">Chyke Web Craft Concepts</span></span>
+          <span class="text-xl font-bold text-navy">CWCC – Chyke Web Craft Concepts</span>
         </div>
         <div class="md:hidden">
-          <button id="menuBtn" class="text-navy p-1 focus:outline-none focus:ring-2 focus:ring-gold rounded" aria-label="Toggle Navigation Menu">
-            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button id="menuBtn" class="text-navy focus:outline-none focus:ring-2 focus:ring-gold rounded p-1" aria-label="Toggle Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
-        <nav id="navMenu" class="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <a href="#home" class="text-gold font-semibold transition-colors">Home</a>
-          <a href="#services" class="text-gray-600 hover:text-gold transition-colors">Services</a>
-          <a href="#about" class="text-gray-600 hover:text-gold transition-colors">About</a>
-          <a href="#portfolio" class="text-gray-600 hover:text-gold transition-colors">Portfolio</a>
-          <a href="#pricing" class="text-gray-600 hover:text-gold transition-colors">Pricing</a>
-          <a href="#contact" class="text-gray-600 hover:text-gold transition-colors">Contact</a>
-          <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="bg-navy hover:bg-navy-light text-white px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all">Book Audit</a>
+        <nav id="navMenu" class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="#home" class="text-gold font-medium border-b-2 border-gold">Home</a>
+          <a href="#services" class="text-navy hover:text-gold transition-colors">Services</a>
+          <a href="#about" class="text-navy hover:text-gold transition-colors">About</a>
+          <a href="#portfolio" class="text-navy hover:text-gold transition-colors">Portfolio</a>
+          <a href="#pricing" class="text-navy hover:text-gold transition-colors">Pricing</a>
+          <a href="#contact" class="text-navy hover:text-gold transition-colors">Contact</a>
         </nav>
+        <a href="mailto:chykewebcraft@gmail.com" class="hidden md:block text-sm text-navy hover:text-gold transition-colors">chykewebcraft@gmail.com</a>
       </div>
       <div id="mobileMenu" class="md:hidden hidden px-6 py-4 bg-white border-b border-gray-100 space-y-3">
         <a href="#home" class="block py-1 text-gold font-semibold">Home</a>
-        <a href="#services" class="block py-1 text-gray-700 hover:text-gold">Services</a>
-        <a href="#about" class="block py-1 text-gray-700 hover:text-gold">About</a>
-        <a href="#portfolio" class="block py-1 text-gray-700 hover:text-gold">Portfolio</a>
-        <a href="#pricing" class="block py-1 text-gray-700 hover:text-gold">Pricing</a>
-        <a href="#contact" class="block py-1 text-gray-700 hover:text-gold">Contact</a>
-        <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="block w-full text-center bg-gold text-navy font-bold py-2.5 rounded-lg mt-2">Book a Strategy Session</a>
+        <a href="#services" class="block py-1 text-navy hover:text-gold">Services</a>
+        <a href="#about" class="block py-1 text-navy hover:text-gold">About</a>
+        <a href="#portfolio" class="block py-1 text-navy hover:text-gold">Portfolio</a>
+        <a href="#pricing" class="block py-1 text-navy hover:text-gold">Pricing</a>
+        <a href="#contact" class="block py-1 text-navy hover:text-gold">Contact</a>
+        <a href="mailto:chykewebcraft@gmail.com" class="block py-1 text-sm text-navy hover:text-gold">chykewebcraft@gmail.com</a>
       </div>
     </header>
 
@@ -117,245 +117,208 @@
         <button id="closeLogoModal" class="absolute top-3 right-3 text-gray-400 hover:text-gold text-2xl font-bold p-1 transition-colors" aria-label="Close Modal">✕</button>
         <img src="img/CWCC logo 2026.jfif" alt="CWCC Logo" class="w-full max-h-80 object-contain rounded-xl mb-4 border border-gray-700" />
         <h3 class="text-white font-bold text-lg">Chyke Web Craft Concepts</h3>
-        <p class="text-gray-400 text-xs mt-1">High-Performance Websites & Lead Systems</p>
+        <p class="text-gray-400 text-xs mt-1">High-Performance Websites & Local SEO</p>
       </div>
     </div>
 
     <main>
       <!-- Hero Section -->
-      <section id="home" class="bg-navy text-white py-24 md:py-32 px-6 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:24px_24px]"></div>
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-          <span class="inline-block py-1 px-3 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-semibold tracking-wide uppercase mb-6">Engineered for Maximum ROI</span>
-          <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-tight leading-tight">
-            Your Website Should Be Your <span class="text-gold">Best Employee</span>.
-          </h1>
-          <p class="text-lg sm:text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-300 font-light leading-relaxed">
-            Stop losing customers to outdated pages. We build high-speed, conversion-engineered platforms and automated lead systems designed to dominate your market.
-          </p>
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="w-full sm:w-auto bg-gold hover:bg-gold-hover text-navy font-bold py-4 px-8 rounded-xl text-base shadow-xl transition-all transform hover:-translate-y-0.5">Book a Free Strategy Session</a>
-            <a href="#services" class="w-full sm:w-auto border border-gray-600 hover:border-gold text-gray-200 hover:text-gold font-medium py-4 px-8 rounded-xl text-base transition-colors">Explore Capabilities</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Trust Bar / Key Proof Metrics -->
-      <section class="border-y border-gray-100 bg-gray-50/50 py-10 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div>
-            <div class="text-3xl font-extrabold text-navy">95+</div>
-            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1 font-semibold">Google PageSpeed Score</div>
-          </div>
-          <div>
-            <div class="text-3xl font-extrabold text-navy">24-48h</div>
-            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1 font-semibold">Rapid MVP Turnaround</div>
-          </div>
-          <div>
-            <div class="text-3xl font-extrabold text-navy">100%</div>
-            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1 font-semibold">Mobile & SEO Optimized</div>
-          </div>
-          <div>
-            <div class="text-3xl font-extrabold text-navy">0%</div>
-            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1 font-semibold">Lead Leakage Design</div>
-          </div>
+      <section id="home" class="bg-navy text-white py-24 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Your Website Should Be Your <span class="text-gold">Best Employee</span>.</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-gray-300">We build high-performance websites and automated systems for serious professionals ready to dominate their local market.</p>
+        <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+          <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="bg-gold text-navy font-semibold py-3 px-8 rounded-lg text-lg shadow-xl hover:bg-yellow-400 transition-all inline-block">Book a Free Strategy Session</a>
+          <a href="#services" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-lg text-lg shadow-xl hover:bg-white hover:text-navy transition-all inline-block">See Our Solutions</a>
         </div>
       </section>
 
       <!-- Services Section -->
-      <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <h2 class="text-sm uppercase tracking-widest text-gold font-bold mb-2">Our Capabilities</h2>
-          <p class="text-3xl sm:text-4xl font-extrabold text-navy">Built to Capture, Convert, and Scale</p>
+      <section id="services" class="py-20 px-4 md:px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-navy mb-12">The Chyke Web Craft Concepts Difference</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          <div class="p-6 rounded-lg shadow-lg border-t-4 border-gold bg-white">
+            <svg class="w-12 h-12 text-gold mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <h3 class="font-bold text-xl text-navy mb-2">High-Speed Performance</h3>
+            <p class="text-gray-700">Websites engineered for speed and a flawless mobile experience, ensuring you never lose a customer due to a slow load time.</p>
+          </div>
+          <div class="p-6 rounded-lg shadow-lg border-t-4 border-gold bg-white">
+            <svg class="w-12 h-12 text-gold mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.03 12.03 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.192-2.058-.574-3.016z"></path></svg>
+            <h3 class="font-bold text-xl text-navy mb-2">Lead Generation Focus</h3>
+            <p class="text-gray-700">Every design choice is made to push visitors toward one goal: becoming a qualified lead for your business.</p>
+          </div>
+          <div class="p-6 rounded-lg shadow-lg border-t-4 border-gold bg-white">
+            <svg class="w-12 h-12 text-gold mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8h12a2 2 0 002-2v-4a2 2 0 00-2-2H6a2 2 0 00-2 2v4a2 2 0 002 2z"></path></svg>
+            <h3 class="font-bold text-xl text-navy mb-2">Local SEO Dominance</h3>
+            <p class="text-gray-700">We implement advanced local SEO so you rank higher in search results, making you the obvious choice in your service area.</p>
+          </div>
         </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section id="about" class="bg-gray-100 py-16 px-4 md:px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <p class="text-xl italic text-gray-700 mb-6">"Before CWCC, our website was a liability. Now, it's our most reliable source of new, qualified business. The lead flow is incredible."</p>
+          <p class="font-semibold text-lg text-navy">— Michael O., Business Owner</p>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="py-20 px-4 md:px-6 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-navy mb-4">Our Simple Path to Your Digital Success</h2>
+        <p class="text-lg text-gray-700 mb-12">Stop waiting, start growing. Our process is fast, efficient, and focused purely on your ROI.</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-xl shadow-gray-100/50 border-t-4 border-t-gold">
-            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6 font-bold text-xl">⚡</div>
-            <h3 class="text-xl font-bold text-navy mb-3">High-Speed Web Platforms</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">Cleanly written HTML, Tailwind CSS, and lightweight scripts that guarantee instant load speeds on mobile and desktop without server lag.</p>
-            <ul class="text-xs text-gray-500 space-y-2 font-medium">
-              <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Fast mobile-first architectures</li>
-              <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Zero bloat or useless plugins</li>
-            </ul>
+          <div class="p-6">
+            <div class="bg-gold text-navy rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow">1</div>
+            <h3 class="font-bold text-xl text-navy mb-2">Discover Your Needs</h3>
+            <p class="text-gray-700">A free, deep-dive strategy session to map out your business goals and current digital challenges.</p>
           </div>
-          <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-xl shadow-gray-100/50 border-t-4 border-t-gold">
-            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6 font-bold text-xl">🎯</div>
-            <h3 class="text-xl font-bold text-navy mb-3">Conversion & Lead Engines</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">Strategically organized UX copy, direct call-to-actions, WhatsApp chat integrations, and instant Calendly booking funnels.</p>
-            <ul class="text-xs text-gray-500 space-y-2 font-medium">
-              <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Direct WhatsApp & Lead Pipelines</li>
-              <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Automated follow-up workflows</li>
-            </ul>
+          <div class="p-6">
+            <div class="bg-gold text-navy rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow">2</div>
+            <h3 class="font-bold text-xl text-navy mb-2">Rapid Development</h3>
+            <p class="text-gray-700">We craft and deploy your high-converting website, often within 24 hours for standard builds.</p>
           </div>
-          <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-xl shadow-gray-100/50 border-t-4 border-t-gold">
-            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6 font-bold text-xl">📍</div>
-            <h3 class="text-xl font-bold text-navy mb-3">Local SEO Dominance</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">Granular schema data, semantic tagging, and search optimization structured to help service professionals rank in their specific region.</p>
-            <ul class="text-xs text-gray-500 space-y-2 font-medium">
-              <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Google Business indexing alignment</li>
-              <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Structured local rich snippets</li>
-            </ul>
+          <div class="p-6">
+            <div class="bg-gold text-navy rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow">3</div>
+            <h3 class="font-bold text-xl text-navy mb-2">Automated Growth</h3>
+            <p class="text-gray-700">You begin receiving automated leads while we handle all the updates, SEO, and maintenance.</p>
           </div>
         </div>
       </section>
 
-      <!-- About Section -->
-      <section id="about" class="py-20 bg-gray-50 px-6">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-sm uppercase tracking-widest text-gold font-bold mb-2">The Concept</h2>
-            <h3 class="text-3xl font-extrabold text-navy mb-6 leading-snug">Websites Built for Growth, Not Just Aesthetics</h3>
-            <p class="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
-              At <strong>Chyke Web Craft Concepts</strong>, we discard clumsy templates and generic designs. We treat your web presence as an automated salesperson operating 24/7.
-            </p>
-            <p class="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
-              By combining lean front-end development with strategic sales psychology, every build is crafted to convert casual visitors into qualified inquiries.
-            </p>
-            <div class="flex items-center gap-4">
-              <div class="border-l-4 border-gold pl-4">
-                <p class="font-bold text-navy text-sm">Direct, Agile Execution</p>
-                <p class="text-xs text-gray-500">Every project handled with focused, personalized attention.</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-navy p-8 rounded-2xl text-white shadow-2xl relative">
-            <div class="text-gold text-5xl font-serif mb-4">“</div>
-            <p class="text-gray-300 italic mb-6 leading-relaxed text-sm md:text-base">
-              Before CWCC, our website was a liability. Now, it's our most reliable source of new, qualified business. The lead flow is incredible.
-            </p>
-            <div>
-              <p class="font-bold text-white text-sm">Michael O.</p>
-              <p class="text-xs text-gold">Founder & Managing Director</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <h2 class="text-sm uppercase tracking-widest text-gold font-bold mb-2">Proof of Work</h2>
-          <p class="text-3xl sm:text-4xl font-extrabold text-navy">High-Converting Frameworks</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all">
-            <div class="h-44 bg-navy flex items-center justify-center p-6 text-center">
-              <span class="text-gold font-bold text-lg">HVAC & Field Contractors</span>
-            </div>
-            <div class="p-6">
-              <span class="text-xs font-semibold text-gold uppercase tracking-wider">Lead Gen Funnel</span>
-              <h4 class="font-bold text-navy text-lg mt-1 mb-2">Service Pro Conversion Site</h4>
-              <p class="text-gray-600 text-xs mb-4">Integrated booking system, real-time quote request triggers, and localized search landing points.</p>
-              <span class="text-navy font-semibold text-xs inline-flex items-center gap-1">Fast Delivery • 99 Performance</span>
-            </div>
-          </div>
-          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all">
-            <div class="h-44 bg-navy-light flex items-center justify-center p-6 text-center">
-              <span class="text-white font-bold text-lg">Direct WhatsApp Commerce</span>
-            </div>
-            <div class="p-6">
-              <span class="text-xs font-semibold text-gold uppercase tracking-wider">E-Commerce Flow</span>
-              <h4 class="font-bold text-navy text-lg mt-1 mb-2">Handcrafted Studio Showcase</h4>
-              <p class="text-gray-600 text-xs mb-4">Visual inventory gallery with dynamic, instant one-click WhatsApp order generation and checkout routing.</p>
-              <span class="text-navy font-semibold text-xs inline-flex items-center gap-1">Direct Checkout • Instant CRM Sync</span>
-            </div>
-          </div>
-          <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all">
-            <div class="h-44 bg-navy-dark flex items-center justify-center p-6 text-center">
-              <span class="text-gold font-bold text-lg">B2B & Professional Practices</span>
-            </div>
-            <div class="p-6">
-              <span class="text-xs font-semibold text-gold uppercase tracking-wider">Corporate Hub</span>
-              <h4 class="font-bold text-navy text-lg mt-1 mb-2">Consultancy Strategy Portal</h4>
-              <p class="text-gray-600 text-xs mb-4">Authority-building brand interface featuring automated Calendly scheduling and interactive client onboarding intake.</p>
-              <span class="text-navy font-semibold text-xs inline-flex items-center gap-1">Automated Intake • 100% Responsive</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing Tiers Section -->
-      <section id="pricing" class="py-24 bg-gray-50 px-6">
-        <div class="max-w-7xl mx-auto">
+      <!-- Integrated Portfolio & Detailed Case Studies -->
+      <section id="portfolio" class="py-20 bg-gray-50 px-4 md:px-6 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto">
           <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-sm uppercase tracking-widest text-gold font-bold mb-2">Straightforward Investment</h2>
-            <p class="text-3xl sm:text-4xl font-extrabold text-navy">Transparent Solutions. Clear ROI.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-navy mb-3">Our Portfolio & Case Studies</h2>
+            <p class="text-lg text-gray-700">See how we build high-performing digital systems that drive measurable business results.</p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-            
-            <!-- Tier 1 -->
-            <div class="bg-white p-8 rounded-2xl border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
-              <div>
-                <h3 class="font-bold text-lg text-navy">Landing Page Sprint</h3>
-                <p class="text-xs text-gray-500 mt-1 mb-6">Designed for product launches & single-service ads.</p>
-                <ul class="text-sm text-gray-600 space-y-3 mb-8">
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> 1 High-Converting Landing Page</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> WhatsApp & Calendly Integration</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Mobile-First Responsive Design</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> 24-48 Hour Rapid Delivery</li>
-                </ul>
+
+          <div class="space-y-12">
+            <!-- Case Study 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-8 items-center border border-gray-100">
+              <div class="md:w-1/2 w-full">
+                <img src="img/case-study-1.png" alt="Case study screenshot for a service company" class="rounded-lg shadow-md w-full h-auto object-cover bg-gray-200" />
               </div>
-              <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="w-full text-center border-2 border-navy text-navy font-bold py-3 rounded-xl hover:bg-navy hover:text-white transition-colors text-sm">Get Started</a>
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-gold mb-1">How We Generated 60% More Leads</h3>
+                <h4 class="text-xl font-semibold text-navy mb-4">for a Local Service Provider</h4>
+                <p class="text-gray-700 mb-3 text-sm leading-relaxed"><b class="text-navy">The Problem:</b> The client's old website was outdated and wasn't converting visitors into calls or leads, losing ground to competitors.</p>
+                <p class="text-gray-700 mb-3 text-sm leading-relaxed"><b class="text-navy">The Solution:</b> Built a modern, mobile-optimized site with direct call-to-actions and implemented local search targeting.</p>
+                <p class="text-base font-bold text-navy mb-6"><b class="text-navy">The Result:</b> A <span class="text-gold font-extrabold">60% increase</span> in qualified leads within the first 6 months.</p>
+                <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="bg-navy text-white font-semibold py-2.5 px-6 rounded-lg shadow hover:bg-gray-800 transition-colors inline-block text-sm">Book Your Success Story</a>
+              </div>
             </div>
 
-            <!-- Tier 2 (Highlighted) -->
-            <div class="bg-navy text-white p-8 rounded-2xl border-2 border-gold flex flex-col justify-between shadow-2xl relative transform md:-translate-y-2">
-              <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-xs font-extrabold uppercase py-1 px-4 rounded-full">Most Popular</span>
-              <div>
-                <h3 class="font-bold text-lg text-white">Full Business Engine</h3>
-                <p class="text-xs text-gray-400 mt-1 mb-6">Complete authority site for established service providers.</p>
-                <ul class="text-sm text-gray-300 space-y-3 mb-8">
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Up to 5 Custom Pages (Home, Services, etc.)</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Advanced Local SEO Optimization</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Live Chat & Lead Capture Pipeline</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Google Search Console Setup</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Priority Revisions & Support</li>
-                </ul>
+            <!-- Case Study 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row-reverse gap-8 items-center border border-gray-100">
+              <div class="md:w-1/2 w-full">
+                <img src="img/case-study-2.png" alt="Case study screenshot for a market leader" class="rounded-lg shadow-md w-full h-auto object-cover bg-gray-200" />
               </div>
-              <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="w-full text-center bg-gold text-navy font-bold py-3.5 rounded-xl hover:bg-gold-hover transition-colors text-sm">Deploy Your Engine</a>
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-gold mb-1">A 250% Increase in Organic Traffic</h3>
+                <h4 class="text-xl font-semibold text-navy mb-4">for an Established Business</h4>
+                <p class="text-gray-700 mb-3 text-sm leading-relaxed"><b class="text-navy">The Problem:</b> Strong reputation offline, but virtually invisible on Google search without continuous word-of-mouth.</p>
+                <p class="text-gray-700 mb-3 text-sm leading-relaxed"><b class="text-navy">The Solution:</b> Performed an end-to-end technical SEO audit, revamped schema structure, and engineered localized target content.</p>
+                <p class="text-base font-bold text-navy mb-6"><b class="text-navy">The Result:</b> A massive <span class="text-gold font-extrabold">250% jump</span> in high-intent organic visitors.</p>
+                <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="bg-navy text-white font-semibold py-2.5 px-6 rounded-lg shadow hover:bg-gray-800 transition-colors inline-block text-sm">Book Your Success Story</a>
+              </div>
             </div>
 
-            <!-- Tier 3 -->
-            <div class="bg-white p-8 rounded-2xl border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
-              <div>
-                <h3 class="font-bold text-lg text-navy">Custom Web Architecture</h3>
-                <p class="text-xs text-gray-500 mt-1 mb-6">Tailored web applications, portals & database solutions.</p>
-                <ul class="text-sm text-gray-600 space-y-3 mb-8">
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Custom SaaS & Client Portal Prototyping</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Database Integration (Firestore/APIs)</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Payment Gateway Setup (Paystack/Stripe/Crypto)</li>
-                  <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Comprehensive Tech Architecture</li>
-                </ul>
+            <!-- Case Study 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-8 items-center border border-gray-100">
+              <div class="md:w-1/2 w-full">
+                <img src="img/case-study-3.png" alt="Case study screenshot for a tech solutions company" class="rounded-lg shadow-md w-full h-auto object-cover bg-gray-200" />
               </div>
-              <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="w-full text-center border-2 border-navy text-navy font-bold py-3 rounded-xl hover:bg-navy hover:text-white transition-colors text-sm">Book Strategy Call</a>
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-gold mb-1">How We Lowered Bounce Rate by 45%</h3>
+                <h4 class="text-xl font-semibold text-navy mb-4">for a Tech Solutions Company</h4>
+                <p class="text-gray-700 mb-3 text-sm leading-relaxed"><b class="text-navy">The Problem:</b> High ad traffic, but users bounced immediately due to sluggish performance and cluttered navigation.</p>
+                <p class="text-gray-700 mb-3 text-sm leading-relaxed"><b class="text-navy">The Solution:</b> Refactored frontend architecture for instant loading speeds and streamlined user journey flow.</p>
+                <p class="text-base font-bold text-navy mb-6"><b class="text-navy">The Result:</b> A <span class="text-gold font-extrabold">45% reduction</span> in bounce rate and higher conversion rates across campaigns.</p>
+                <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="bg-navy text-white font-semibold py-2.5 px-6 rounded-lg shadow hover:bg-gray-800 transition-colors inline-block text-sm">Book Your Success Story</a>
+              </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      <!-- Contact / Inquiry Section -->
-      <section id="contact" class="py-24 px-6 max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Pricing Plans Section -->
+      <section id="pricing" class="py-24 px-4 md:px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Straightforward Investment Options</h2>
+          <p class="text-gray-600 mt-3 text-base">Select the package designed for your current stage of growth.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          
+          <div class="bg-white p-8 rounded-2xl border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div>
+              <h3 class="font-bold text-xl text-navy">Landing Page Sprint</h3>
+              <p class="text-xs text-gray-500 mt-1 mb-6">Designed for product launches & single-service ads.</p>
+              <ul class="text-sm text-gray-600 space-y-3 mb-8">
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> 1 High-Converting Landing Page</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> WhatsApp & Calendly Integration</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Mobile-First Responsive Design</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> 24-48 Hour Rapid Delivery</li>
+              </ul>
+            </div>
+            <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="w-full text-center border-2 border-navy text-navy font-bold py-3 rounded-xl hover:bg-navy hover:text-white transition-colors text-sm">Get Started</a>
+          </div>
+
+          <div class="bg-navy text-white p-8 rounded-2xl border-2 border-gold flex flex-col justify-between shadow-2xl relative transform md:-translate-y-2">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-xs font-extrabold uppercase py-1 px-4 rounded-full">Most Popular</span>
+            <div>
+              <h3 class="font-bold text-xl text-white">Full Business Engine</h3>
+              <p class="text-xs text-gray-400 mt-1 mb-6">Complete authority site for established service providers.</p>
+              <ul class="text-sm text-gray-300 space-y-3 mb-8">
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Up to 5 Custom Pages (Home, Services, etc.)</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Advanced Local SEO Optimization</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Live Chat & Lead Capture Pipeline</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Google Search Console Setup</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Priority Revisions & Support</li>
+              </ul>
+            </div>
+            <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="w-full text-center bg-gold text-navy font-bold py-3.5 rounded-xl hover:bg-gold-hover transition-colors text-sm">Deploy Your Engine</a>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div>
+              <h3 class="font-bold text-xl text-navy">Custom Web Architecture</h3>
+              <p class="text-xs text-gray-500 mt-1 mb-6">Tailored web applications, portals & database solutions.</p>
+              <ul class="text-sm text-gray-600 space-y-3 mb-8">
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Custom SaaS & Client Portal Prototyping</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Database Integration (Firestore/APIs)</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Payment Gateway Setup (Paystack/Stripe/Crypto)</li>
+                <li class="flex items-center gap-2"><span class="text-gold font-bold">✓</span> Comprehensive Tech Architecture</li>
+              </ul>
+            </div>
+            <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="w-full text-center border-2 border-navy text-navy font-bold py-3 rounded-xl hover:bg-navy hover:text-white transition-colors text-sm">Book Strategy Call</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-24 px-6 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <span class="text-xs font-bold text-gold uppercase tracking-widest">Get In Touch</span>
             <h2 class="text-3xl font-extrabold text-navy mt-1 mb-4">Let's Build Something Exceptional</h2>
             <p class="text-gray-600 text-sm leading-relaxed mb-6">
-              Have an upcoming launch or ready to upgrade your existing site into an automated lead generator? Drop a message or book directly on the calendar.
+              Ready to upgrade your web presence into an automated, revenue-generating asset? Send an inquiry or schedule your strategy session directly.
             </p>
             <div class="space-y-3 text-sm">
               <p class="flex items-center gap-3 text-gray-700">
                 <span class="font-bold text-navy">Email:</span>
-                <a href="mailto:chykewebcraft@gmail.com" class="text-gold hover:underline">chykewebcraft@gmail.com</a>
+                <a href="mailto:chykewebcraft@gmail.com" class="text-navy hover:text-gold transition-colors font-medium">chykewebcraft@gmail.com</a>
               </p>
               <p class="flex items-center gap-3 text-gray-700">
-                <span class="font-bold text-navy">Strategy:</span>
-                <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">Book a 1-on-1 Discovery Call</a>
+                <span class="font-bold text-navy">Calendar:</span>
+                <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" target="_blank" rel="noopener noreferrer" class="text-navy hover:text-gold transition-colors font-medium">Book a Free Strategy Session</a>
               </p>
             </div>
           </div>
           <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-xl">
-            <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.');" class="space-y-4">
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been submitted.');" class="space-y-4">
               <div>
                 <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Your Name</label>
                 <input type="text" required placeholder="John Doe" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold" />
@@ -368,7 +331,7 @@
                 <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Project Details</label>
                 <textarea rows="3" required placeholder="Tell us about your website goals or timeline..." class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
               </div>
-              <button type="submit" class="w-full bg-navy text-white font-bold py-3 rounded-lg hover:bg-navy-light transition-colors text-sm">Send Inquiry</button>
+              <button type="submit" class="w-full bg-navy text-white font-bold py-3 rounded-lg hover:bg-gray-800 transition-colors text-sm">Send Inquiry</button>
             </form>
           </div>
         </div>
@@ -376,42 +339,36 @@
 
       <!-- Bottom Banner CTA -->
       <section class="text-center py-20 px-4 bg-gold text-navy">
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Get a Website That Works for You?</h2>
-        <p class="text-base md:text-lg mb-8 max-w-xl mx-auto font-medium text-navy/90">Turn your online presence into a consistent, qualified lead pipeline.</p>
-        <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="bg-navy text-white font-semibold py-3.5 px-8 rounded-xl shadow-xl hover:bg-navy-dark transition-all inline-block">Book a Free Strategy Session</a>
+        <h2 class="text-3xl font-bold mb-4">Ready to Get a Website That Works for You?</h2>
+        <p class="text-lg mb-6 max-w-2xl mx-auto font-medium">Let’s turn your online presence into your most reliable lead generation tool.</p>
+        <a href="https://calendly.com/chykewebcraft-concepts/free-strategy-session" class="bg-navy text-white font-semibold py-3 px-8 rounded-lg shadow-xl hover:bg-gray-900 transition-colors inline-block">Book a Free Strategy Session</a>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy text-white text-xs py-10 text-center border-t border-gray-800">
-      <div class="max-w-7xl mx-auto px-4 space-y-4">
-        <p>&copy; 2026 Chyke Web Craft Concepts. All rights reserved.</p>
-        <p class="text-gray-400">Digital craftsmanship for business professionals who prioritize performance.</p>
-        <div class="flex justify-center space-x-4 text-gold">
-          <a href="#home" class="hover:underline">Home</a>
-          <span>•</span>
-          <a href="#services" class="hover:underline">Services</a>
-          <span>•</span>
-          <a href="#about" class="hover:underline">About</a>
-          <span>•</span>
-          <a href="#portfolio" class="hover:underline">Portfolio</a>
-          <span>•</span>
-          <a href="#pricing" class="hover:underline">Pricing</a>
-          <span>•</span>
-          <a href="#contact" class="hover:underline">Contact</a>
-        </div>
-      </div>
+    <footer class="bg-navy text-white text-sm py-8 text-center">
+      <p>&copy; 2026 Chyke Web Craft Concepts. All rights reserved.</p>
+      <p class="text-gray-400 mt-1">Digital craftsmanship for business pros who don’t settle.</p>
+      <p class="mt-3">
+        Quick Links: 
+        <a href="#home" class="text-gold hover:underline">Home</a> | 
+        <a href="#services" class="text-gold hover:underline">Services</a> | 
+        <a href="#about" class="text-gold hover:underline">About</a> |
+        <a href="#portfolio" class="text-gold hover:underline">Portfolio</a> |
+        <a href="#pricing" class="text-gold hover:underline">Pricing</a> |
+        <a href="#contact" class="text-gold hover:underline">Contact</a>
+      </p>
     </footer>
 
     <!-- Scripts -->
     <script>
+      // Mobile Menu Toggle & Auto-close on click
       const menuBtn = document.getElementById('menuBtn');
       const mobileMenu = document.getElementById('mobileMenu');
       menuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
 
-      // Close mobile menu on anchor click
       document.querySelectorAll('#mobileMenu a').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
@@ -454,10 +411,17 @@
       href="https://wa.me/19296151984" 
       target="_blank" 
       rel="noopener noreferrer" 
-      aria-label="Direct message on WhatsApp" 
+      aria-label="Chat with Chyke Web Craft Concepts on WhatsApp" 
       class="whatsapp-btn"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="#fff"
+        aria-hidden="true"
+      >
         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-2.826-.824-2.152-.887-3.535-3.08-3.641-3.22-.107-.145-.867-1.155-.867-2.202 0-1.048.548-1.564.743-1.777.195-.213.424-.266.565-.266.142 0 .284.002.408.008.13.006.304-.049.476.364.177.425.603 1.472.656 1.58.053.107.089.233.018.375-.071.144-.107.233-.213.356-.107.124-.225.276-.322.371-.107.107-.219.224-.094.439.124.213.553.913 1.189 1.479.818.729 1.509.954 1.722 1.061.213.107.337.089.462-.054.124-.142.533-.621.675-.834.142-.213.284-.177.477-.107.195.071 1.233.582 1.446.688.213.107.355.16.408.249.053.089.053.515-.091.92zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2 22l4.957-1.301C8.384 21.498 10.134 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
       </svg>
     </a>
