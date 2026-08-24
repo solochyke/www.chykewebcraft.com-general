@@ -94,6 +94,7 @@
           <a href="#home" class="text-gold font-medium border-b-2 border-gold">Home</a>
           <a href="#services" class="text-navy hover:text-gold transition-colors">Services</a>
           <a href="#about" class="text-navy hover:text-gold transition-colors">About</a>
+          <a href="#process" class="text-navy hover:text-gold transition-colors">Process</a>
           <a href="#portfolio" class="text-navy hover:text-gold transition-colors">Portfolio</a>
           <a href="#pricing" class="text-navy hover:text-gold transition-colors">Pricing</a>
           <a href="#faq" class="text-navy hover:text-gold transition-colors">FAQ</a>
@@ -105,6 +106,7 @@
         <a href="#home" class="block py-1 text-gold font-semibold">Home</a>
         <a href="#services" class="block py-1 text-navy hover:text-gold">Services</a>
         <a href="#about" class="block py-1 text-navy hover:text-gold">About</a>
+        <a href="#process" class="block py-1 text-navy hover:text-gold">Process</a>
         <a href="#portfolio" class="block py-1 text-navy hover:text-gold">Portfolio</a>
         <a href="#pricing" class="block py-1 text-navy hover:text-gold">Pricing</a>
         <a href="#faq" class="block py-1 text-navy hover:text-gold">FAQ</a>
@@ -178,11 +180,10 @@
         </div>
       </section>
 
-      <!-- About Section (Integrated Founder Story & Growth Model) -->
+      <!-- About Section -->
       <section id="about" class="py-20 bg-gray-50 px-4 md:px-6 border-t border-gray-200">
         <div class="max-w-5xl mx-auto space-y-16">
           
-          <!-- Founder Story Article -->
           <article class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-2xl shadow-md border border-gray-100">
             <img src="img/My Professional Picture for Work.png" alt="Solomon Chyke, Founder of CWCC" class="w-56 h-56 rounded-2xl object-cover shadow-md flex-shrink-0" />
             <div>
@@ -197,7 +198,6 @@
             </div>
           </article>
 
-          <!-- Value Pillars -->
           <div>
             <h2 class="text-2xl md:text-3xl font-bold text-navy mb-8 text-center">How We Help You Grow</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -216,7 +216,6 @@
             </div>
           </div>
 
-          <!-- Testimonial Highlight -->
           <div class="bg-navy p-8 rounded-2xl text-white shadow-xl text-center max-w-3xl mx-auto">
             <p class="text-lg md:text-xl italic text-gray-200 mb-4">"Before CWCC, our website was a liability. Now, it's our most reliable source of new, qualified business. The lead flow is incredible."</p>
             <p class="font-bold text-gold text-base">— Michael O., Business Owner</p>
@@ -225,7 +224,7 @@
         </div>
       </section>
 
-      <!-- 3-Step Process Section -->
+      <!-- Process Section -->
       <section id="process" class="py-16 px-4 md:px-6 bg-white text-center border-t border-gray-200">
         <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4">Our Simple, Proven Process</h2>
         <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-10">We follow a clear, transparent process to ensure your digital system is launched on time and built purely for ROI.</p>
@@ -250,7 +249,7 @@
         </div>
       </section>
 
-      <!-- Integrated Portfolio & Case Studies -->
+      <!-- Portfolio Section -->
       <section id="portfolio" class="py-20 bg-gray-50 px-4 md:px-6 border-t border-gray-200">
         <div class="max-w-6xl mx-auto">
           <div class="text-center max-w-3xl mx-auto mb-16">
@@ -307,20 +306,31 @@
         </div>
       </section>
 
-      <!-- Pricing Plans Section -->
+      <!-- Pricing Plans Section with Currency Toggle -->
       <section id="pricing" class="py-24 px-4 md:px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-center max-w-3xl mx-auto mb-10">
           <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Straightforward Investment Options</h2>
           <p class="text-gray-600 mt-3 text-base">Select the package designed for your current stage of growth.</p>
+          
+          <!-- Currency Toggle Switch -->
+          <div class="mt-8 inline-flex items-center bg-gray-100 p-1.5 rounded-xl border border-gray-200 shadow-inner">
+            <button id="currUSD" type="button" class="px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all bg-navy text-white shadow">
+              USD ($)
+            </button>
+            <button id="currNGN" type="button" class="px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all text-gray-600 hover:text-navy">
+              NGN (₦)
+            </button>
+          </div>
         </div>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           
-          <!-- Tier 1 ($130) -->
+          <!-- Tier 1 ($130 / ₦195,000) -->
           <div class="bg-white p-8 rounded-2xl border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
             <div>
               <h3 class="font-bold text-xl text-navy">Landing Page Sprint</h3>
               <div class="my-4">
-                <span class="text-4xl font-extrabold text-navy">$130</span>
+                <span id="tier1Price" class="text-4xl font-extrabold text-navy transition-all duration-300">$130</span>
                 <span class="text-xs text-gray-500 font-semibold uppercase tracking-wider block mt-1">One-time investment</span>
               </div>
               <p class="text-xs text-gray-500 mb-6">Designed for product launches & single-service ads.</p>
@@ -334,13 +344,13 @@
             <a href="#contact" class="w-full text-center border-2 border-navy text-navy font-bold py-3 rounded-xl hover:bg-navy hover:text-white transition-colors text-sm">Get Started</a>
           </div>
 
-          <!-- Tier 2 ($270 - Highlighted) -->
+          <!-- Tier 2 ($270 / ₦405,000 - Highlighted) -->
           <div class="bg-navy text-white p-8 rounded-2xl border-2 border-gold flex flex-col justify-between shadow-2xl relative transform md:-translate-y-2">
             <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-navy text-xs font-extrabold uppercase py-1 px-4 rounded-full">Most Popular</span>
             <div>
               <h3 class="font-bold text-xl text-white">Full Business Engine</h3>
               <div class="my-4">
-                <span class="text-4xl font-extrabold text-gold">$270</span>
+                <span id="tier2Price" class="text-4xl font-extrabold text-gold transition-all duration-300">$270</span>
                 <span class="text-xs text-gray-400 font-semibold uppercase tracking-wider block mt-1">One-time investment</span>
               </div>
               <p class="text-xs text-gray-400 mb-6">Complete authority site for established service providers.</p>
@@ -395,7 +405,7 @@
               </svg>
             </button>
             <div class="faq-content hidden px-6 pb-4 text-xs md:text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
-              For our <strong>$130 Landing Page Sprint</strong>, standard turnaround is between <strong>24 to 48 hours</strong> once your copy and branding assets are submitted. Full 5-page business websites typically launch within <strong>3 to 5 business days</strong>.
+              For our <strong>Landing Page Sprint</strong>, standard turnaround is between <strong>24 to 48 hours</strong> once your copy and branding assets are submitted. Full 5-page business websites typically launch within <strong>3 to 5 business days</strong>.
             </div>
           </div>
 
@@ -407,7 +417,7 @@
               </svg>
             </button>
             <div class="faq-content hidden px-6 pb-4 text-xs md:text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
-              We operate on a transparent <strong>50% deposit</strong> to kick off architectural development and design, with the remaining <strong>50% due upon final sign-off</strong> and live deployment.
+              We operate on a transparent <strong>50% deposit</strong> to kick off architectural development and design, with the remaining <strong>50% due upon final sign-off</strong> and live deployment. We accept local bank transfers (NGN), Paystack, and USD cards/crypto.
             </div>
           </div>
 
@@ -570,6 +580,31 @@
         if (e.target === logoModal) {
           logoModal.classList.add('hidden');
         }
+      });
+
+      // Currency Toggle (USD <-> NGN)
+      const currUSD = document.getElementById('currUSD');
+      const currNGN = document.getElementById('currNGN');
+      const tier1Price = document.getElementById('tier1Price');
+      const tier2Price = document.getElementById('tier2Price');
+
+      const prices = {
+        USD: { tier1: '$130', tier2: '$270' },
+        NGN: { tier1: '₦195,000', tier2: '₦405,000' }
+      };
+
+      currUSD.addEventListener('click', () => {
+        currUSD.className = "px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all bg-navy text-white shadow";
+        currNGN.className = "px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all text-gray-600 hover:text-navy";
+        tier1Price.textContent = prices.USD.tier1;
+        tier2Price.textContent = prices.USD.tier2;
+      });
+
+      currNGN.addEventListener('click', () => {
+        currNGN.className = "px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all bg-navy text-white shadow";
+        currUSD.className = "px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all text-gray-600 hover:text-navy";
+        tier1Price.textContent = prices.NGN.tier1;
+        tier2Price.textContent = prices.NGN.tier2;
       });
 
       // FAQ Accordion Handler
