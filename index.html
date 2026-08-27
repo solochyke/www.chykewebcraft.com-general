@@ -5,18 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chyke Web Craft Concepts | High-Performance Websites & Lead Systems</title>
     <meta name="description" content="Turn your online presence into your hardest-working revenue driver. Fast, conversion-engineered websites, local SEO, and automated SaaS pipelines." />
-<!-- Canonical URL to prevent duplicate content issues -->
+    
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://chykewebcraft.com/" />
 
-    <!-- Google Site Verification (Get code from Google Search Console) -->
-    <!-- <meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_CODE" /> -->
-
-    
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Chyke Web Craft Concepts | Web Development & Automation" />
     <meta property="og:description" content="High-performance web architecture, local SEO, and automated lead generation systems built for ROI." />
     <meta property="og:image" content="img/CWCC logo 2026.jfif" />
+
+    <!-- Structured Data / JSON-LD Schema for Blog, Organization & Social Profiles -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://chykewebcraft.com/#organization",
+          "name": "Chyke Web Craft Concepts",
+          "url": "https://chykewebcraft.com",
+          "sameAs": [
+            "https://www.instagram.com/chykewebcraftconcept/"
+          ],
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://chykewebcraft.com/img/CWCC%20logo%202026.jfif"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-929-615-1984",
+            "contactType": "customer service",
+            "email": "chykewebcraft@gmail.com",
+            "areaServed": ["NG", "US", "Global"]
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://chykewebcraft.com/#article-2x-profit",
+          "headline": "5 Proven Strategies to Generate 2X Profit",
+          "description": "This actionable guide reveals five data-driven approaches to help businesses in emerging markets double their profitability without drastically increasing sales or overhead.",
+          "keywords": "Profit growth strategies, local SEO, operational efficiency, pricing optimization, customer lifetime value",
+          "inLanguage": "en-US",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://chykewebcraft.com/#blog"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Solomon Chyke",
+            "jobTitle": "Founder & Lead Developer"
+          },
+          "publisher": {
+            "@id": "https://chykewebcraft.com/#organization"
+          },
+          "datePublished": "2026-08-27T08:00:00+01:00",
+          "dateModified": "2026-08-27T08:00:00+01:00"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://chykewebcraft.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How fast can my landing page or website launch?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For our Landing Page Sprint, standard turnaround is between 24 to 48 hours once your copy and branding assets are submitted. Full 5-page business websites typically launch within 3 to 5 business days."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are your payment terms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We operate on a transparent 50% deposit to kick off architectural development and design, with the remaining 50% due upon final sign-off and live deployment. We accept direct Paystack checkout, local bank transfers (NGN), and USD cards/crypto."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I own 100% of the code and assets after launch?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You have total ownership of your source code, domain, database access, and design assets. We build with lightweight, open web standards—no platform lock-in."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if I need updates or maintenance post-launch?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every package comes with a dedicated post-launch support window for fine-tuning. We also offer affordable monthly optimization and SEO maintenance retainers to keep your pipelines running smoothly."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -107,7 +193,15 @@
           <a href="#faq" class="text-navy hover:text-gold transition-colors">FAQ</a>
           <a href="#contact" class="text-navy hover:text-gold transition-colors">Contact</a>
         </nav>
-        <a href="mailto:chykewebcraft@gmail.com" class="hidden md:block text-sm text-navy hover:text-gold transition-colors">chykewebcraft@gmail.com</a>
+        
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="https://www.instagram.com/chykewebcraftconcept/#" target="_blank" rel="noopener noreferrer" class="text-navy hover:text-gold transition-colors" aria-label="CWCC Instagram">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="mailto:chykewebcraft@gmail.com" class="text-sm text-navy hover:text-gold transition-colors font-medium">chykewebcraft@gmail.com</a>
+        </div>
       </div>
       <div id="mobileMenu" class="md:hidden hidden px-6 py-4 bg-white border-b border-gray-100 space-y-3">
         <a href="#home" class="block py-1 text-gold font-semibold">Home</a>
@@ -119,7 +213,12 @@
         <a href="#blog" class="block py-1 text-navy hover:text-gold">Blog</a>
         <a href="#faq" class="block py-1 text-navy hover:text-gold">FAQ</a>
         <a href="#contact" class="block py-1 text-navy hover:text-gold">Contact</a>
-        <a href="mailto:chykewebcraft@gmail.com" class="block py-1 text-sm text-navy hover:text-gold">chykewebcraft@gmail.com</a>
+        <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+          <a href="mailto:chykewebcraft@gmail.com" class="block py-1 text-sm text-navy hover:text-gold">chykewebcraft@gmail.com</a>
+          <a href="https://www.instagram.com/chykewebcraftconcept/#" target="_blank" rel="noopener noreferrer" class="text-navy hover:text-gold text-xs font-bold flex items-center gap-1">
+            Instagram &rarr;
+          </a>
+        </div>
       </div>
     </header>
 
@@ -628,11 +727,18 @@
             <div>
               <h3 class="text-xl font-bold text-navy mb-2">Direct Communication</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
-                Prefer immediate correspondence? Connect directly with our team via email, call, or live chat.
+                Prefer immediate correspondence? Connect directly with our team via email, call, Instagram, or live chat.
               </p>
             </div>
 
             <div class="space-y-4">
+              <a href="https://www.instagram.com/chykewebcraftconcept/#" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl border border-gray-100 flex items-center space-x-3 text-navy hover:text-gold hover:border-gold/30 transition-all bg-gray-50/50">
+                <svg class="h-6 w-6 text-gold flex-shrink-0 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span class="text-sm font-medium">@chykewebcraftconcept</span>
+              </a>
+
               <a href="mailto:chykewebcraft@gmail.com" class="p-4 rounded-xl border border-gray-100 flex items-center space-x-3 text-navy hover:text-gold hover:border-gold/30 transition-all bg-gray-50/50">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.896 5.264a2 2 0 002.208 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -666,21 +772,34 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy text-white text-sm py-8 text-center">
-      <p>&copy; 2026 Chyke Web Craft Concepts. All rights reserved.</p>
-      <p class="text-gray-400 mt-1">Digital craftsmanship for business pros who don’t settle.</p>
-      <p class="mt-3">
-        Quick Links: 
-        <a href="#home" class="text-gold hover:underline">Home</a> | 
-        <a href="#services" class="text-gold hover:underline">Services</a> | 
-        <a href="#about" class="text-gold hover:underline">About</a> | 
-        <a href="#process" class="text-gold hover:underline">Process</a> | 
-        <a href="#portfolio" class="text-gold hover:underline">Portfolio</a> | 
-        <a href="#pricing" class="text-gold hover:underline">Pricing</a> | 
-        <a href="#blog" class="text-gold hover:underline">Blog</a> | 
-        <a href="#faq" class="text-gold hover:underline">FAQ</a> | 
-        <a href="#contact" class="text-gold hover:underline">Contact</a>
-      </p>
+    <footer class="bg-navy text-white text-sm py-10 text-center">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Social Icons Row -->
+        <div class="flex justify-center items-center space-x-6 mb-4">
+          <a href="https://www.instagram.com/chykewebcraftconcept/#" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-white transition-colors flex items-center gap-2 text-xs font-semibold" aria-label="Follow CWCC on Instagram">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram (@chykewebcraftconcept)</span>
+          </a>
+        </div>
+        
+        <p>&copy; 2026 Chyke Web Craft Concepts. All rights reserved.</p>
+        <p class="text-gray-400 mt-1">Digital craftsmanship for business pros who don’t settle.</p>
+        
+        <p class="mt-4 text-xs sm:text-sm text-gray-300">
+          Quick Links: 
+          <a href="#home" class="text-gold hover:underline">Home</a> | 
+          <a href="#services" class="text-gold hover:underline">Services</a> | 
+          <a href="#about" class="text-gold hover:underline">About</a> | 
+          <a href="#process" class="text-gold hover:underline">Process</a> | 
+          <a href="#portfolio" class="text-gold hover:underline">Portfolio</a> | 
+          <a href="#pricing" class="text-gold hover:underline">Pricing</a> | 
+          <a href="#blog" class="text-gold hover:underline">Blog</a> | 
+          <a href="#faq" class="text-gold hover:underline">FAQ</a> | 
+          <a href="#contact" class="text-gold hover:underline">Contact</a>
+        </p>
+      </div>
     </footer>
 
     <!-- Scripts -->
